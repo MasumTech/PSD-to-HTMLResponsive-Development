@@ -1,0 +1,718 @@
+/*============================
+Common CSS
+============================*/
+body {
+    color: #666666;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aligenleft {
+    float: left;
+    margin-right: 55px;
+    margin-bottom: 15px;
+}
+
+.aligenright {
+    float: right;
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+
+.aligencenter {
+    display: block;
+    margin: 0 auto 15px;
+
+}
+
+/*============================
+Top Header CSS
+============================*/
+.header_area {
+    width: 100%;
+    clear: both;
+}
+
+#top_header_area {
+    background-color: #ba2e1f;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.inner_top_header {
+    overflow: hidden;
+}
+
+.mini_menu {
+    float: left;
+    width: 70%;
+    padding-top: 5px;
+}
+
+.mini_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.mini_menu ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.mini_menu ul li::after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 1px;
+    height: 12px;
+    top: 5px;
+    right: -10px;
+}
+
+.mini_menu ul li:last-child::after {
+    display: none;
+}
+
+.mini_menu ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.mini_menu ul li a:hover {
+    color: #ddd;
+}
+
+.search_area {
+    width: 30%;
+    float: right;
+}
+
+.search_area form {
+    background: #fff;
+    border-radius: 25px;
+    max-width: 210px;
+    width: 96%;
+    padding: 2%;
+    float: right;
+}
+
+
+.search_area input {
+    border: 0px solid;
+    width: 88%;
+    padding: 1%;
+    color: #000;
+    float: left;
+}
+
+.search_area input[type="submit"] {
+    background-image: url(img/search.gif);
+    background-repeat: no-repeat;
+    width: 10%;
+    background-position: right;
+    cursor: pointer;
+}
+
+/*============================
+Main Header CSS
+============================*/
+
+.main_header_area {
+    width: 100%;
+    clear: both;
+}
+
+.inner_header {
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.logo_area {
+    float: left;
+    width: 240px;
+
+}
+
+.social_area {
+    margin-top: 25px;
+    float: right;
+    max-width: 600px;
+    width: 100%;
+
+}
+
+.social_area ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: right;
+}
+
+.social_area ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social_area ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.social_area ul li a i {
+    background-color: #282828;
+    display: block;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 35px;
+    padding-top: 8px;
+    color: #fff;
+    height: 25px;
+    text-align: center;
+}
+
+.social_area ul li a i:hover {
+    background-color: #ba2e1f;
+}
+
+.social_area ul li a:hover i.fa-linkedin-in {
+    background-color: #0078B7;
+}
+
+.social_area ul li a:hover i.fa-twitter {
+    background-color: #37B1E2;
+}
+
+.social_area ul li a:hover i.fa-pinterest {
+    background-color: #E83F3A;
+}
+
+.social_area ul li a:hover i.fa-google-plus-g {
+    background-color: #E83F3A;
+}
+
+.social_area ul li a:hover i.fa-rss {
+    background-color: #EE802F;
+}
+
+/*============================
+Main Menu CSS
+============================*/
+
+#main_menu {
+    width: 100%;
+    clear: both;
+}
+
+.inner_menu {
+    background: #333333;
+    position: relative;
+    min-height: 30px;
+    padding: 15px 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.inner_menu::after {
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+
+#main_menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+#main_menu ul li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+#main_menu ul li a {
+    color: #e9e8e3;
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+}
+
+#main_menu ul li a:hover {
+    color: #ba2e1f;
+}
+
+#main_menu ul li:hover a {
+    color: #ba2e1f;
+}
+
+#main_menu ul li:hover ul li a {
+    color: #fff;
+}
+
+/*============================
+DropDown Style CSS
+============================*/
+
+#main_menu ul ul {
+    position: absolute;
+    background: #ce2817;
+    left: -99999999px;
+    top: 30;
+    width: 180px;
+}
+
+#main_menu ul li:hover ul {
+    left: 0;
+}
+
+#main_menu ul ul li {
+    display: block;
+    margin: 0;
+}
+
+#main_menu ul ul li:hover a {
+    color: #fff;
+    background: #333333;
+}
+
+#main_menu ul ul li:hover ul li a {
+    color: #fff;
+    background: #ce2817;
+}
+
+#main_menu ul ul li ul li a:hover {
+    color: #fff;
+    background: #333333;
+}
+
+#main_menu ul ul ul {
+    left: 180px;
+    top: -99999999px;
+    width: 180px;
+}
+
+#main_menu ul ul li:hover ul {
+    left: 180px;
+    top: 0;
+    width: 180px;
+}
+
+/*============================
+Slider CSS
+============================*/
+#slider_area {
+    margin-top: 20px;
+}
+
+.item {
+    position: relative;
+}
+
+.slider_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.slider_caption h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+/*============================
+Banner Area CSS
+============================*/
+#banner_area {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.inner_banner {
+    overflow: hidden;
+}
+
+.inner_banner h2 {
+    color: #000;
+    font-size: 84px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 25px;
+    margin-top: 90px;
+}
+
+.inner_banner p {
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.inner_banner a {
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.inner_banner a:hover {
+    color: #000;
+}
+
+/*============================
+Work Area CSS
+============================*/
+#work_area {
+    background: #fff;
+    margin-top: 50px;
+
+}
+
+.inner_work {
+    width: 100%;
+    overflow: hidden;
+}
+
+.child_work {
+    width: 32%;
+    float: left;
+    padding: 0 1% 15px;
+}
+
+.child_work h2 {
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.child_work p {
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.child_work a {
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    clear: both;
+    float: right;
+    text-decoration: none;
+}
+
+.child_work a:hover {
+    color: #000;
+}
+
+.about_area {
+    padding-left: 0;
+}
+
+.about_area img {
+    border: 1px solid #f2f2f2;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.service_area {}
+
+.child_service {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.child_service .service_image {
+    width: 25%;
+    float: left;
+}
+
+.child_service .service_text {
+    width: 75%;
+    float: right;
+    margin-top: -20px;
+    line-height: 1.45em;
+}
+
+.child_service .service_text h3 {
+    color: #989898;
+    font-size: 16px;
+}
+
+.testimonials_area {
+    padding-right: 0;
+}
+
+.testimonials_area .child_testimonials {
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.testimonials_area .child_testimonials h3 {
+    background-image: url(img/quote_sign.jpg);
+    background-repeat: no-repeat;
+    color: #989898;
+    font-size: 15px;
+    margin-top: 0;
+    overflow: hidden;
+    display: inline-block;
+    padding: 15px 0 10px 55px;
+
+}
+
+.testimonials_area .child_testimonials h4 {
+    color: #989898;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    overflow: hidden;
+    display: inline-block;
+    padding: 15px 0 5px 55px;
+    padding-left: 8px;
+}
+
+.testimonials_area .child_testimonials p {
+    line-height: 1.55em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+
+
+
+/*============================
+Footer Area CSS
+============================*/
+
+#footer_area {
+    background: f2f2f2;
+    padding-top: 45px;
+}
+
+.inner_footer {
+    overflow: hidden;
+
+}
+
+.child_footer {
+    margin: 1%;
+    padding: 0 1% 10px;
+    float: left;
+    width: 21%;
+}
+
+.child_footer h3 {
+    border-top: 1px solid #666666;
+    color: #666666;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.child_footer p {
+    color: #666666;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px; 
+    line-height: 20px;
+}
+
+.child_footer p a {
+    color: #b82c1f;
+    font-size: 14px;
+    padding-right: 1px;
+    text-decoration: none;
+}
+
+.child_footer p a:hover {
+    color: #000;
+}
+
+.tweet_child {
+    margin-bottom: 35px;
+}
+
+.child_footer ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.child_footer ul ul {
+    display: none;
+}
+
+.child_footer ul li {
+    display: block;
+    padding-bottom: 10.5px;
+    border-bottom: 1px solid #666666;
+}
+
+.child_footer ul li:last-child {
+    border-bottom: 1px solid #666666;
+}
+
+.child_footer ul li a {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.child_footer ul li a:hover {
+    color: #b82c1f;
+}
+
+.child_blog {
+    padding-bottom: 20px;
+}
+
+.child_blog h4 {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.child_blog h6 {
+    color: #666666;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+.child_blog p {
+    color: #666666;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 1.3em;
+}
+
+.child_blog p {
+    color: #666666;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    line-height: 1.3em;
+}
+
+.child_blog a {
+    color: #b82c1f;
+    font-size: 14px;
+    text-decoration: none;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.child_blog a:hover {
+    color: #000;
+
+}
+
+.child_blog h6 a {
+    color: #b82c1f;
+    font-size: 12px;
+    margin: 0px;
+    float: left;
+    line-height: 1.3em;
+}
+
+.child_blog h6 a:hover {
+    color: #000;
+}
+
+.child_footer input {
+    background: #f2f2f2;
+    padding: 10px 2%;
+    border: 0px solid;
+    margin-bottom: 10px;
+    width: 96%;
+    height: 30px;
+}
+
+.child_footer textarea {
+    background: #f2f2f2;
+    padding: 10px 2%;
+    border: 0px solid;
+    margin-bottom: 10px;
+    width: 96%;
+    height: 125px;
+}
+
+.child_footer input[type="submit"] {
+    background: #f2f2f2;
+    color: #b82c1f;
+    height: 30px;
+    width: 80px;
+    text-transform: uppercase;
+}
+
+.child_footer input[type="submit"]:hover {
+    background: #b82c1f;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+
+
+
+/*============================
+Copyright Area CSS
+============================*/
+
+#copyright_area {
+    background: #f2f2f2;
+    color: #919191;
+    font-size: 12px;
+    height: 65px;
+    width: 100%;
+}
+
+.inner_copyright {
+    overflow: hidden;
+}
+
+.inner_copyright .copyright_leftarea {
+    float: left;
+    padding: 0 2%;
+    width: 56%;
+    
+}
+
+.inner_copyright .copyright_rightarea {
+    float: right;
+    padding: 0 2%;
+    width: 36%;
+    text-align: right;
+}
