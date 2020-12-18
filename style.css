@@ -1,0 +1,822 @@
+/*============================
+Common CSS
+============================*/
+body {
+    color: #696969;
+    font-family: Georgia, sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aligenleft {
+    float: left;
+    margin-right: 55px;
+    margin-bottom: 15px;
+}
+
+.aligenright {
+    float: right;
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+
+.aligencenter {
+    display: block;
+    margin: 0 auto 15px;
+
+}
+
+/*============================
+Top Header CSS
+============================*/
+.header_area {
+    width: 100%;
+    clear: both;
+}
+
+#top_header_area {
+    background-color: #ffffff;
+    height: 35px;
+    padding: 15px 0;
+    width: 100%;
+
+}
+
+.inner_top_header {
+    overflow: hidden;
+}
+
+.contact_menu {
+    float: left;
+    width: 50%;
+    color: #696969;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.contact_menu p {
+    display: inline-block;
+    float: left;
+    margin-right: 55px;
+}
+
+.contact_menu p:last-child {
+    margin-right: 0;
+}
+
+.search_area {
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.search_area form {
+    float: right;
+    background-color: #e1e1e1;
+    max-width: 210px;
+    width: 98%;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+.search_area input {
+    border: 0px solid;
+    width: 88%;
+    padding: 1%;
+    color: #696969;
+    float: left;
+    background-color: #e1e1e1;
+}
+
+.search_area input[type="submit"] {
+    background-image: url(img/search.jpg);
+    background-repeat: no-repeat;
+    width: 10%;
+    background-position: right;
+    cursor: pointer;
+}
+
+/*============================
+Main Menu CSS
+============================*/
+#main_header_area {
+    background-color: #222222;
+    width: 100%;
+    clear: both;
+}
+
+.inner_header_area {
+    min-height: 70px;
+    padding: 20px 0;
+    border-bottom: 5px solid #7c9c37;
+
+}
+
+.logo_area {
+    float: left;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.main_menu_area {
+    float: right;
+    margin-top: 15px;
+    max-width: 750px;
+    width: 100%;
+
+}
+
+.main_menu_area ul {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    list-style: none;
+    text-align: right;
+}
+
+.main_menu_area ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+}
+
+.main_menu_area ul li::after {
+    position: relative;
+    content: "";
+    background: #fff;
+    width: 1px;
+    height: 35px;
+    top: 0px;
+    right: -15px;
+
+}
+
+.main_menu_area ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.main_menu_area ul li a:hover {
+    color: #e92727;
+}
+
+.main_menu_area ul li:first-child a {
+    margin-left: 0px;
+    color: #7c9c37;
+}
+
+.main_menu_area ul li p {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0px;
+    text-align: left;
+}
+
+/*============================
+DropDown Style CSS
+============================*/
+.main_menu_area ul ul {
+    position: absolute;
+    background: #ce2817;
+    left: -9999999999px;
+    margin-left: 0px;
+    margin-top: 2px;
+    z-index: 1;
+}
+
+.main_menu_area ul li:hover ul {
+    left: 0px;
+}
+
+.main_menu_area ul li:last-child:after {
+    display: none;
+}
+
+.main_menu_area ul ul li::after {
+    display: none;
+}
+
+.main_menu_area ul ul li {
+    display: block;
+    margin-left: 0px;
+    text-align: left;
+    padding: 5px 10px 5px;
+}
+
+.main_menu_area ul li:hover a {
+    color: #ce2817;
+}
+
+.main_menu_area ul li:hover ul li a {
+    color: #fff;
+}
+
+.main_menu_area ul ul li:hover {
+    background: #000;
+}
+
+/*============================
+Slider CSS
+============================*/
+
+#slider_area {
+    margin:0;
+    padding: 0;
+
+}
+
+.item {
+    position: relative;
+    max-height: 380px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.bx-wrapper {
+    margin-bottom: 0px;
+    box-shadow: 0 0 0px #ccc;
+    border: 5px solid #bbb7b7;
+    border-top: 0px solid #fff;
+
+}
+
+.bx-wrapper .bx-pager {
+    display: none;
+}
+
+.slider_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.slider_caption h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+/*============================
+Title Quote CSS
+============================*/
+
+#title_quote_area {
+    padding: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border-bottom: 0px solid #e8e8e8;
+
+}
+
+.inner_title_area {}
+
+.inner_title_area h2 {
+    color: #959595;
+    font-weight: normal;
+    font-size: 27px;
+    text-align: center;
+    line-height: normal;
+    padding: 0px 2% 0px;
+
+}
+
+
+/*============================
+Border Image CSS
+============================*/
+
+
+#border_image_area {
+    margin: 0;
+    padding: 0;
+}
+
+.inner_border_area img {
+    position: absolute;
+    max-width: 800px;
+    width: 80%;
+    padding: 0 80px;
+}
+
+
+
+/*============================
+Service Area CSS
+============================*/
+
+#service_area {
+    padding: 50px 20px 50px;
+    background: #ffffff;
+}
+
+.inner_service_area {
+    width: 100%;
+    overflow: hidden;
+}
+
+.child_service_item {
+    width: 22%;
+    float: left;
+    margin: 0px 1.5% 0px;
+    background: #f0f0f0;
+}
+
+.child_service_item .image_area {
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.child_service_item .text_area {
+    background: #f0f0f0;
+
+}
+
+.child_service_item .text_area h3:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+.child_service_item .text_area h3 {
+    margin: 20px 15px 15px;
+    color: #7c9c37;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+}
+.child_service_item .text_area p {
+    margin: 0px 15px 20px;
+    color: #666666;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+/*============================
+Testimonial Area CSS
+============================*/
+
+.testimonial_area {
+    padding: 50px 20px 50px;
+    background: #ffffff;
+}
+
+.inner_testimonial_area {
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial_left_area {
+    width: 49%;
+    float: left;
+    overflow: hidden;
+}
+
+.testimonial_left_area_heading {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e2e2;
+
+}
+
+.testimonial_left_area_heading h2 {
+    color: #666666;
+    font-size: 18px;
+    font-weight: normal;
+    float: left;
+}
+
+.testimonial_left_area_heading a {
+    color: #7b9b37;
+    padding: 15px 0px 15px;
+    font-size: 13px;
+    font-weight: normal;
+    float: right;
+    text-decoration: none;
+}
+.testimonial_left_area_heading a:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+.child_testimonial_left_area_item {
+    width: 47%;
+    float: left;
+    display: block;
+    margin: 0px 0% 10px;
+    margin-right: 3%;
+}
+
+
+.child_testimonial_left_area_item .image_area{
+    width: 22%;
+    float: left;
+    margin-top: 20px;
+     
+}
+ 
+.child_testimonial_left_area_item .text_area{
+    width: 65%;
+    float: left;
+    margin-left: 15px;
+    display: block;
+}
+
+
+.child_testimonial_left_area_item .text_area h3{
+     color: #7c9c37;
+     font-size: 14px;
+     font-weight: normal;
+     margin-bottom: 10px;
+     
+}
+.child_testimonial_left_area_item .text_area h3:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+
+.child_testimonial_left_area_item .text_area p{
+     color: #666666;
+     font-size: 13px;
+     font-weight: normal;
+     margin-top: 10px;
+     line-height: 1.6;
+      
+}
+
+
+.testimonial_right_area {
+    width: 48%;
+    float: left;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.testimonial_right_area_heading {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e2e2;
+
+}
+
+.testimonial_right_area_heading h2 {
+    color: #666666;
+    font-size: 18px;
+    font-weight: normal;
+    float: left;
+}
+
+.testimonial_right_area_heading a {
+    color: #7b9b37;
+    padding: 15px 0px 15px;
+    font-size: 13px;
+    font-weight: normal;
+    float: right;
+    text-decoration: none;
+}
+.testimonial_right_area_heading a:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+
+.child_testimonial_right_area_item {
+    width: 47%;
+    float: left;
+    display: block;
+    margin-top:20px;
+}
+
+#first_child_testimonial{
+    max-width: 225px;
+    width: 47%;
+    float: left;
+    margin-right: 20px;
+     
+}
+ 
+#second_child_testimonial{
+    max-width: 225px;
+    width: 47%;
+    float: right;
+    
+}
+
+.child_testimonial_right_area_item .profile_area{
+    width: 50%;
+    float: left;
+}
+
+.child_testimonial_right_area_item .profile_area .text_area{
+     
+    float: left;
+    display: inline-block;
+     
+ 
+}
+.child_testimonial_right_area_item .profile_area .text_area h3{
+    color: #666666;
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+    margin-top: 25px;
+    display: inline-block;
+    margin-bottom: 0px;
+    
+}
+.child_testimonial_right_area_item .profile_area .text_area p{
+    color: #666666;
+    font-size: 13px;
+    font-weight: normal;
+    float: left;
+    margin-left: 5px;
+    margin-top: 25px;
+    display: inline-block;
+    margin-bottom: 0px;
+    
+}
+.child_testimonial_right_area_item .profile_area .profile_link{
+     
+    float: left;
+    display: block;
+    margin-top: 10px;
+ 
+}
+.child_testimonial_right_area_item .profile_area .profile_link a{
+    color: #7b9b37;
+    font-size: 13px;
+    font-weight: normal;
+    float: left;
+    text-decoration: none;
+}
+.child_testimonial_right_area_item .profile_area .profile_link a:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+
+/*============================
+Footer Area CSS
+============================*/
+
+#footer_area {
+    background: #222222;
+    padding: 30px 0 30px;
+}
+.inner_footer {
+    overflow: hidden;
+}
+.child_footer {
+    float: left;
+    width: 23%;
+}
+.child_footer h3 {
+    color: #666666;
+    font-size: 12px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.child_footer p {
+    color: #666666;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px; 
+    line-height: 20px;
+}
+#about_us{
+     margin-right: 20px;
+     padding-bottom: 0px;
+}
+#about_us .image_area{
+    max-height: 90px;
+    max-width: 215px;
+    height: 100%;
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #333333;
+}
+#about_us .text_area{
+      padding-top: 20px;
+      margin-right: 50px;
+      float: left;
+}
+#about_us .text_area a {
+    color: #7b9b37;
+    padding: 10px 0px 30px;
+    font-size: 12px;
+    font-weight: normal;
+    float: left;
+    text-decoration: none;
+}
+#about_us .text_area a:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+#link_block{
+     padding-left: 0px;
+     padding-right: 20px;
+     padding-bottom: 0px;
+     float: left;
+     line-height: 1.8;
+}
+#link_block ul {
+    margin-right: 30px;
+    margin-top: 0px;
+    padding: 0px;
+    list-style: none;     
+}
+#link_block ul li {
+    display: block;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #333333;
+}
+
+#link_block ul li a {
+    color: #7c9c37;
+    font-size: 12px;
+    text-decoration: none;
+}
+#link_block ul li a:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+
+#child_footer_blog{
+    padding-right: 25px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+#child_footer_blog h3{
+     margin-bottom: 0px;
+     padding-bottom: 0px;
+}
+#child_footer_blog .blog_post {
+      overflow: hidden;
+}
+#child_footer_blog .blog_post h4{
+     color: #666666;
+     font-size: 14px;
+     margin-top: 20px;
+     margin-bottom: 0px;  
+}
+#child_footer_blog .blog_post h5{
+     color: #666666;
+     font-size: 10px;
+     margin-top: 0px;
+     margin-bottom: 0px;  
+}
+#child_footer_blog .blog_post p{
+     color: #666666;
+     font-size: 12px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     line-height: 1.4;
+}
+#child_footer_blog .blog_post a{
+     color: #7c9c37;
+     font-size: 12px;
+     padding-top: 10px;
+     font-weight: normal;
+     float: left;
+     text-decoration: none;
+}
+#child_footer_blog .blog_post a:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+
+.child_footer .contact_us{
+    padding-left: 5px;
+}
+
+.child_footer .contact_us h3{
+}
+.child_footer .contact_us p{
+     color: #666666;
+     font-size: 12px; 
+     line-height: 1.8;     
+}
+.child_footer .contact_us b{
+     color: #7c9c37;  
+}
+.child_footer .contact_us b:hover{
+      color: #b82c1f;
+      cursor: pointer; 
+}
+.child_footer .newsletter{
+    padding-left: 5px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    
+}
+
+.child_footer .newsletter h3{
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+}
+.child_footer .newsletter input {
+    background: #353535;
+    padding: 10px 2%;
+    border: 0px solid;
+    margin-bottom: 10px;
+    width: 96%;
+    height: 20px;
+    border-radius: 5%;
+}
+
+
+.child_footer .newsletter input[type="submit"] {
+    background: #7c9c37;
+    color: #ffffff;
+    height: 30px;
+    width: 80px;
+    padding: 5px 2%; 
+    text-transform: uppercase;
+    border-radius: 10%;
+    font-family: Georgia; 
+}
+
+.child_footer input[type="submit"]:hover {
+    background: #b82c1f;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+/*============================
+Copyright Area CSS
+============================*/
+
+#copyright_area {
+    background: #222222;
+    color: #666666;
+    font-size: 12px;
+    height: 65px;
+    width: 100%;
+    border-top: 1px solid #3a3a3a;
+}
+
+.inner_copyright {
+    overflow: hidden;
+}
+
+.inner_copyright .copyright_leftarea {
+    float: left;
+    padding: 10px 0 10px;
+    margin: 0px;
+    width: 65%;
+    
+}
+
+.inner_copyright .copyright_rightarea {
+    float: right;
+    padding: 10px 0 10px;
+    margin-right: 10px;
+    width: 30%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
